@@ -80,8 +80,10 @@
       $('#myTabs a:last').tab('show');
           
           $('a[data-toggle="tab"]').on('shown.bs.tab',function(){ 
-              window.alert($(event.relatedTarget).text());
-              window.alert($(event.target).text());
+//              window.alert($(event.relatedTarget).text());
+//              window.alert($(event.target).text());
+              
+              window.alert('the active tab is : ' + $(event.target).text());+ '. the previous tab is : ' + $(event.relatedTarget).text());)
           });
       </script>
       
