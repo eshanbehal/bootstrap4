@@ -79,8 +79,9 @@
       <script>
       $('#myTabs a:last').tab('show');
           
-          $('a[data-toggle="tab"]').on('shown.bs.tab',function(){
-              window.alert('hi');
+          $('a[data-toggle="tab"]').on('shown.bs.tab',function(){ 
+              window.alert($(event.relatedTarget).text());
+              window.alert($(event.target).text());
           });
       </script>
       
