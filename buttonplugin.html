@@ -13,6 +13,8 @@
   <body>
     <div class="container-fluid">
       <button type="button" class="btn btn-primary" data-loading-text="Loading..." id="button1">button1</button>
+        
+        <button type="button" class="btn btn-primary" data-loading-text="Loading..." id="button2" data-complete-text="Download completed">button2</button>
       
       </div>
 
@@ -27,6 +29,12 @@
               $(this).button('loading').delay(2000).queue(function(){
                   
                   $(this).button('reset');
+              });
+          });
+          $('#button2').click(function(){
+              $(this).button('loading').delay(2000).queue(function(){
+                  
+                  $(this).button('complete');
               });
           });
       });
