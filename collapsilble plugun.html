@@ -18,7 +18,69 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container-fluid">
+      <a class="btn btn-primary" href="#collapse01" data-toggle="collapse">Link</a>
+        
+        <div class="bg-danger collapse" id="collapse01">
+        <p>Collapse content 1</p>
+        <p>Collapse content 1</p>
+        <p>Collapse content 1</p>
+        </div>
+        
+        <button class="btn btn-primary" data-target="#collapse02" data-toggle="collapse">button</button>
+        
+        <div class="bg-warning collapse" id="collapse02">
+        <p>Collapse content 2</p>
+        <p>Collapse content 2</p>
+        <p>Collapse content 2</p>
+        </div>
+        
+        <div id="accordion" class="panel-group">
+            <div class="panel-warning panel">
+                <div class="panel-heading">
+                <h4 class="panel-title"><a  href="#collapse1" data-toggle="collapse" data-parent="#accordion">Section 1</a></h4>
+                </div>
+                
+                <div class="panel-collapse collapse in" id="collapse1">
+                <div class="panel-body">
+                    <p>Collapsible content 1</p>
+                    <p>Collapsible content 1</p>
+                    <p>Collapsible content 1</p>
+                    </div>
+                </div>
+                
+                <div class="panel-success panel">
+                <div class="panel-heading">
+                <h4 class="panel-title"><a  href="#collapse2" data-toggle="collapse" data-parent="#accordion">Section 2</a></h4>
+                </div>
+                
+                <div class="panel-collapse collapse" id="collapse2">
+                <div class="panel-body">
+                    <p>Collapsible content 2</p>
+                    <p>Collapsible content 2</p>
+                    <p>Collapsible content 2</p>
+                    </div>
+                </div>
+            
+                    
+                    <div class="panel-danger panel">
+                <div class="panel-heading">
+                <h4 class="panel-title"><a  href="#collapse3" data-toggle="collapse" data-parent="#accordion">Section 3</a></h4>
+                </div>
+                
+                <div class="panel-collapse collapse" id="collapse3">
+                <div class="panel-body">
+                    <p>Collapsible content 3</p>
+                    <p>Collapsible content 3</p>
+                    <p>Collapsible content 3</p>
+                    </div>
+                </div>
+            
+            
+            </div>
+        
+        </div>
+        
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
