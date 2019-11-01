@@ -69,10 +69,16 @@
       $(function(){
           
           $('.carousel').carousel({
-              interval : 3000
+              interval : 2000
           });
           $('.carousel').on('slide.bs.carousel', function(){
               $('p').toggleClass('yellow');
+          });
+          
+          $('.carousel').hover(function(){
+              $(this).carousel('pause');
+          },function(){
+              $(this).carousel('cycle');
           });
       });
       </script>
