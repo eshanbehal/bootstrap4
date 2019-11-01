@@ -8,16 +8,27 @@
     <title>Affix Plugin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   </head>
+    <style>
+        ul.nav-tabs{
+            width: auto;
+            border: 1px solid purple;
+            border-radius: 3px;
+        }
+        ul.nav-tabs li.active, ul.nav-tabs li.hover{
+            color: white;
+            background: purple;
+        }
+    </style>
   <body>
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-3">
           <ul id="myAffix" class="nav nav-tabs nav-stacked">
-            <li><a>Section one</a></li>
-            <li><a>Section two</a></li>
-            <li><a>Section three</a></li>
-            <li><a>Section four</a></li>
-            <li><a>Section five</a></li>
+            <li><a href="#section1">Section one</a></li>
+            <li><a href="#section2">Section two</a></li>
+            <li><a href="#section3">Section three</a></li>
+            <li><a href="#section4">Section four</a></li>
+            <li><a href="#section5">Section five</a></li>
             </ul>
           </div>
           <div class="col-xs-9">
